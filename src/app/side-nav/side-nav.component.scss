@@ -1,0 +1,91 @@
+body{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.head-logo{
+  font-size: xx-large;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 5px 5px 5px grey;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar-tile{
+    padding: 10px;
+  }
+
+  .sidebar-tile a{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  .sidebar-tile:hover {
+    background-color: lightskyblue;
+    border-style: solid;
+    border-left-color: #00BFFF;
+    border-left-width: 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .active{
+    background-color: lightskyblue;
+    border-style: solid;
+    border-left-color: #00BFFF;
+    border-left-width: 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  ul{
+      display: contents;
+  }
+
+  li{
+      justify-content: center;
+      list-style-type: none;
+  }
+  
+  div.content {
+    background-color: lightgray;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .head-logo{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 500px) { .head-logo { display: none;} }
+  @media screen and (max-width: 650px) { .head-logo { display: none;} }

@@ -1,0 +1,25 @@
+<div class="sidebar">
+    <img class="logo" src="../../assets/logo.png" alt="LOGO">
+    <div class="sidebar-tile" routerLink='students' routerLinkActive='active'>
+        <ul>
+            <li><i class="fa fa-user head-logo"></i></li>
+            <li><a href="#news">Students</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-tile" routerLink='lesson-plan' routerLinkActive='active'>
+        <ul>
+            <li><i class="fa fa-book head-logo"></i></li>
+            <li><a href="#contact">Lesson Plan</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-tile" routerLink='settings' routerLinkActive='active'>
+        <ul>
+            <li><i class="fa fa-cog head-logo"></i></li>
+            <li><a href="#about">Settings</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
